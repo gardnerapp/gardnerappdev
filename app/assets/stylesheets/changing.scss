@@ -1,0 +1,13 @@
+@import "mixies";
+
+.ic-caption{
+  font-size: 5em;
+  margin: auto;
+  @include Text-Shadow();
+}
+
+.ic{
+  margin: auto;
+  font-size: 10em;
+
+}
