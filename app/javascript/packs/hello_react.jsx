@@ -6,7 +6,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Video from "../components/Video";
-import Personal from "../components/Personal";
+import Personal from "../components/Personal.js.erb";
 import Stack from "../components/Stack";
 import Changing from "../components/Changing";
 import Footer from "../components/Footer";
