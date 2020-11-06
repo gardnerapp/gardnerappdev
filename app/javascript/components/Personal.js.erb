@@ -1,0 +1,24 @@
+import React from "react"
+import Carousel from "react-bootstrap/Carousel";
+import PropTypes from "prop-types"
+class Personal extends React.Component {
+  render () {
+    return (
+        <div className="carousel-container">
+            <Carousel>
+                <Carousel.Item>
+                    <%= image_path("kevin-ku-w7ZyuGYNpRQ-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                </Carousel.Item>
+                <Carousel.Item>
+                    image_path("chris-ried-ieic5Tq8YMk-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                </Carousel.Item>
+                <Carousel.Item>
+                    image_path("maxwell-nelson-taiuG8CPKAQ-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                </Carousel.Item>
+            </Carousel>
+        </div>
+    );
+  }
+}
+
+export default Personal
