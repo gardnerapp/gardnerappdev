@@ -8,7 +8,8 @@ class Video extends React.Component {
           <div className="row">
               <div className="col-md-6">
               <video
-                     autoPlay="autoPlay"
+                  muted={true}
+                     autoPlay={true}
                      controls="controls"
                      src="../assets/Flutter_Resteraunt_Demo.mp4"
                      >

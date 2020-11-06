@@ -5,22 +5,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
+import Video from "../components/Video";
+import Personal from "../components/Personal";
+import Stack from "../components/Stack";
+import Changing from "../components/Changing";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
+      <div>
+        <NavBar />
+        <Personal/>
+        <Video/>
+        <Stack />
+        <Changing />
+        <Footer />
+      </div>,
+      document.body.appendChild(document.createElement('div')),
   )
 })
