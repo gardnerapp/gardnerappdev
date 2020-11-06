@@ -7,13 +7,16 @@ class Personal extends React.Component {
         <div className="carousel-container">
             <Carousel>
                 <Carousel.Item>
-                    <%= image_path("kevin-ku-w7ZyuGYNpRQ-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                  <img src="kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" className="d-block w-100 carousel-img"
+                  alt="first"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    image_path("chris-ried-ieic5Tq8YMk-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                    <img src="chris-ried-ieic5Tq8YMk-unsplash.jpg" className="d-block w-100 carousel-img"
+                         alt="second"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    image_path("maxwell-nelson-taiuG8CPKAQ-unsplash.jpg", class:"d-block w-100 carousel-img")%>
+                    <img src="maxwell-nelson-taiuG8CPKAQ-unsplash.jpg" className="d-block w-100 carousel-img"
+                    alt="third" />
                 </Carousel.Item>
             </Carousel>
         </div>
