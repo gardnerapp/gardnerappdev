@@ -1,0 +1,21 @@
+@import "mixins";
+
+.fas{
+  @include icon(#00FF00 );
+  text-shadow: 3px 6px #272634;
+}
+
+.fa-react{
+  @include icon(#61dbfb);
+  font-size: 4.5em;
+  text-shadow: 2px 2px #272634;
+}
+
+.fa-dove{
+  @include icon(#00a0ff);
+}
+
+.fa-gem{
+  @include icon(#de3f24);
+}
+
