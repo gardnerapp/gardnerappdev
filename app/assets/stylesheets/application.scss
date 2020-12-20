@@ -1,0 +1,138 @@
+@import "bootstrap";
+.nav-item{
+  padding: 0 .3em 0 .3em;
+}
+.header-text{
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+h1, h3{
+  line-height: 1em;
+}
+.profile-container {
+  padding: 8em;
+  text-align: center;
+}
+
+.profile-image{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 0px 15px #BBBBBB;
+}
+
+.giv-border{
+  border: 10px black solid;
+}
+
+.header-container{
+  background-color: #eeedeb;
+}
+.col-align{
+  position: relative;
+  top: 1.95em;
+}
+
+.card{
+  box-shadow: 0px 0px 5px #BBBBBB;
+}
+
+.low-pad{
+  padding: 6em;
+}
+
+@mixin icon($color){
+  font-size: 4em;
+  color: $color;
+}
+
+.fas{
+  @include icon(#00FF00 );
+  text-shadow: 3px 6px #272634;
+}
+
+.fa-react{
+  @include icon(#61dbfb);
+  font-size: 4.5em;
+  text-shadow: 2px 2px #272634;
+}
+
+.fa-dove{
+  @include icon(#00a0ff);
+}
+
+.fa-gem{
+  @include icon(#de3f24);
+}
+
+.showcase-title{
+  padding: 2.5em;
+}
+
+.d-block{
+  height: 700px;
+  @media only screen and (max-width: 700px) {
+    height: 400px;
+  }
+}
+
+
+.header-wrap{
+  width: 100%;
+}
+
+.pipe{
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+@mixin backgroundImage($imgPath){
+  background-image: url($imgPath);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px
+}
+
+.show-1{
+  @include backgroundImage("code-2.jpg");
+}
+
+.show-2{
+  @include backgroundImage("code-3.jpg");
+}
+
+.show-3{
+  @include backgroundImage("stock1.jpg")
+}
+
+.jumbo-header{
+  @include backgroundImage("flow.jpg");
+  height: auto;
+  background-attachment: fixed;
+}
+.showcase-text{
+  padding: 7em;
+}
+
+textarea{
+  height: 9em;
+}
+
+.header{
+  text-align: center;
+  margin: .5em;
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 2em;
+  }
+}
+
+
+
+li{
+  font-size: 1.5em;
+}
