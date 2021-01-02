@@ -1,14 +1,17 @@
 @import "mixins";
 
+@mixin lessIconShadow(){
+  text-shadow: .05em .05em #272634;
+}
+
 .fas{
   @include icon(#00FF00 );
-  text-shadow: 3px 6px #272634;
 }
 
 .fa-react{
   @include icon(#61dbfb);
   font-size: 4.5em;
-  text-shadow: 2px 2px #272634;
+  @include lessIconShadow;
 }
 
 .fa-dove{
@@ -17,5 +20,6 @@
 
 .fa-gem{
   @include icon(#de3f24);
+  @include lessIconShadow;
 }
 

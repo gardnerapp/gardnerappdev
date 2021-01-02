@@ -1,0 +1,41 @@
+<%= form_with(model: contact, local: true) do |form| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this submission from being saved:</h2>
+
+      <ul>
+        <% contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col">
+      <div class="field">
+        <%= form.label "Name: "%>
+        <%= form.text_field :nam, class: "form-control"%>
+      </div>
+    </div>
+    <div class="col">
+      <div class="field">
+        <%= form.label "Phone:" %>
+        <%= form.text_field :phone, class: "form-control"%>
+      </div>
+    </div>
+  </div>
+  <br/>
+<div class="row">
+  <div class="col">
+    <br/>
+    <h4>Briefly describe how you intend to create value with your application idea </h4>
+    <br/>
+  <div class="field">
+    <%= form.text_area :description, class:"form-control" %>
+  </div>
+    <br/>
+  </div>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
+</div>
+<% end %>

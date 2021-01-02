@@ -4,6 +4,7 @@
 @import "profile";
 @import "icons";
 @import "full-img";
+@import "picgrid";
 body{
   overflow: scroll;
 }
@@ -19,24 +20,6 @@ body{
 
 .header-wrap{
   width: 100%;
-}
-
-
-.show-1{
-  @include backgroundImage("code-2.jpg");
-}
-
-.show-2{
-  @include backgroundImage("code-3.jpg");
-}
-
-.show-3{
-  @include backgroundImage("stock1.jpg")
-}
-
-
-.showcase-text{
-  padding: 7em;
 }
 
 textarea{
