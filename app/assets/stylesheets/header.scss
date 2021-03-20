@@ -1,20 +1,32 @@
-/* nav and headr */
-@import "mixins";
-.nav-item{
-  padding: 0 .3em 0 .3em;
-}
-.header-text{
-  font-weight: bold;
-  letter-spacing: .1em;
-}
-h1, h3{
-  line-height: 1em;
-}
-
-.jumbo-header{
-  @include backgroundImage("flow.jpg");
-  height: auto;
-  background-attachment: fixed;
+/* Header */
+.fa-cogs{
+  z-index: 1;
+  @media screen and (max-width: 900px){
+    font-size: 10em;
+  }
+  font-size: 18rem;
+  background: -webkit-linear-gradient(orange, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.header-wrapper{
+  margin: 1.5em 1em 1.5em 1em;
+}
+
+.header-item-wrapper {
+  text-align: center;
+  .jumbo-container{
+    position: relative;
+    top: 4em;
+  }
+}
+
+.header-col{
+  height: 50vh;
+  @media screen and(max-width: 765px){
+    height: 30vh;
+    margin: 0 0 2em;
+  }
+}
 

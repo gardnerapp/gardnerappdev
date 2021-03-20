@@ -1,42 +1,18 @@
 @import "bootstrap";
-@import "mixins";
+@import "navbar";
 @import "header";
-@import "profile";
-@import "icons";
-@import "full-img";
-@import "picgrid";
-body{
-  overflow: scroll;
-}
+@import "about";
+@import "services";
 
-.card{
-  box-shadow: 0px 0px 5px #BBBBBB;
-}
-
-.showcase-title{
-  padding: 2.5em;
-}
-
-
-.header-wrap{
-  width: 100%;
-}
-
-textarea{
-  height: 9em;
-}
-
-.header{
-  text-align: center;
-  margin: .5em;
-  h1{
-    font-size: 2.5em;
-  }
-  h2{
-    font-size: 2em;
+html, body{
+  h1, h2, h3, h4, h5, h6, p{
+    font-family: "Times New Roman"
   }
 }
 
-li{
-  font-size: 1.5em;
+.bg-img{
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
