@@ -18,8 +18,13 @@
   </head>
 
   <body>
-  <%= render "layouts/nav" %>
+    <% flash.each do |type,msg| %>
+      <div class="<%=type %>">
+        <%=msg %>
+      </div>
+    <% end %>
+    <%= render "layouts/nav" %>
     <%= yield %>
-  <%= render "layouts/footer" %>
+    <%= render "layouts/footer" %>
   </body>
 </html>
