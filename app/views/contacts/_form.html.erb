@@ -15,7 +15,7 @@
     <div class="col">
       <div class="field">
         <%= form.label "Name: "%>
-        <%= form.text_field :nam, class: "form-control"%>
+        <%= form.text_field :name, class: "form-control"%>
       </div>
     </div>
     <div class="col">
@@ -25,17 +25,12 @@
       </div>
     </div>
   </div>
-  <br/>
 <div class="row">
   <div class="col">
-    <br/>
-    <h4>Briefly describe how you intend to create value with your application idea </h4>
-    <br/>
   <div class="field">
-    <%= form.text_area :description, class:"form-control" %>
+    <%= form.text_area :description, class:"form-control",  :placeholder => "My Awesome Idea...", size: "30x10" %>
+    <%= form.submit "Submit", class: "btn btn-secondary btn-lg btn-block mt-5 mb-5" %>
   </div>
-    <br/>
   </div>
-    <%= form.submit "Submit", class: "btn btn-primary" %>
 </div>
 <% end %>

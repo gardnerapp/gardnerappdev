@@ -1,6 +1,6 @@
 /* Header */
 .fa-cogs{
-  z-index: 1;
+  z-index: 2;
   @media screen and (max-width: 900px){
     font-size: 10em;
   }
@@ -18,7 +18,7 @@
   text-align: center;
   .jumbo-container{
     position: relative;
-    top: 4em;
+    top: 4.5em;
   }
 }
 
