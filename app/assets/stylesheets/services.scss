@@ -1,6 +1,6 @@
 .services-wrapper{
-  background-color: #BBBBBB;
-  height: 45vh;
+
+  height: 40vh;
   @media screen and (max-width: 768px){
     height: 80vh;
   }
@@ -12,13 +12,17 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.fa-cart-arrow-down:hover, .fa-desktop:hover, .fa-mobile-alt:hover{
+  font-size: 5.2em;
+}
 
 .services-item-header{
   padding: .3em 0 0;
 }
 
+
 .services-col{
-  margin: 2em 0 0;
+  margin: 3em 0 0;
   @media screen and (max-width: 768px){
     margin: .5em 0 0;
   }
