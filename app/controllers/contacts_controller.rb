@@ -1,10 +1,7 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: %i[show edit update destroy]
   before_action :authenticate_user!, only: %i[index show edit update destroy]
-
-  # Todo Flash Success when contact is success full redirect towards home
-  # add devise User
-  # Redraw route for new
+  
 
   # GET /contacts
   # GET /contacts.json

@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="container text-center">
+  <div class="row d-flex">
+    <div class="col-md-6 offset-md-3">
+      <div class="container post-container">
+        <h2>
+          <%= @post.title %>
+        </h2>
+        <h3>
+          <%= @post.content %>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
